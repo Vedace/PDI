@@ -1,7 +1,7 @@
 import requests
 import pandas as pd 
 
-ibge = 'https://servicodados.ibge.gov.br/api/v1/localidades/distritos'
+ibge = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios'
 
 dados_ibge = requests.get (ibge)
 
