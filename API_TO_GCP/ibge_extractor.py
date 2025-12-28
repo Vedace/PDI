@@ -31,3 +31,5 @@ print(df_ibge.head())
 df_ibge.to_parquet(f"ibge_{timestamp_ontem}.parquet", index=False)
 df_ibge1.to_parquet(f"ibge1_{timestamp_atual}.parquet", index=False)
 df_ibge2.to_parquet(f"ibge2_{timestamp_atual}.parquet", index=False) # modificar para cloud storage
+
+df_ibge.parquet.help
